@@ -23,4 +23,23 @@ export class RSampling {
 
         return result;
     }
+
+
+    //Another rejection sampling method
+    fit(f, g, m, n) {
+        let i = 0;
+        let result = [];
+        while(i != n) {
+            let x = random(this.mindensity, this.maxdensity);
+            let prob = f(x)/(m * g(x));
+            let u = Math.random();
+            if(prob > u ) {
+                result.push(x);
+                i += 1;
+            }
+
+        }
+
+        return result
+    }
 }
