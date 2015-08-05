@@ -6,6 +6,9 @@ export class RSampling {
         this.maxdensity = maxdensity;
     }
 
+    //Apply parameters
+    //where q is a density function
+    //n - number of samples
     fit(q, n){
         let i = 0;
         let result = [];
