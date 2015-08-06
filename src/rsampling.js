@@ -26,7 +26,7 @@ export class RSampling {
 
 
     //Another rejection sampling method
-    fit(f, g, m, n) {
+    fit2(f, g, m, n) {
         let i = 0;
         let result = [];
         while(i != n) {
