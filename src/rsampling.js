@@ -30,9 +30,9 @@ export class RSampling {
         let i = 0;
         let result = [];
         while(i != n) {
-            let x = random(this.mindensity, this.maxdensity);
-            let prob = f(x)/(m * g(x));
-            let u = Math.random();
+            const x = random(this.mindensity, this.maxdensity);
+            const prob = f(x)/(m * g(x));
+            const u = Math.random();
             if(prob > u ) {
                 result.push(x);
                 i += 1;
