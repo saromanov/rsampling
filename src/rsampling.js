@@ -25,7 +25,8 @@ export class RSampling {
     }
 
 
-    //Another rejection sampling method
+    //Another rejection sampling method.
+    //One difference is rejection criteria.
     fit2(f, g, m, n) {
         let i = 0;
         let result = [];
