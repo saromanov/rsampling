@@ -1,7 +1,7 @@
 import underscore, {random} from 'underscore';
 
 export class RSampling {
-    constructor(mindensity, maxdensity){
+    constructor(mindensity=0, maxdensity=10){
         this.mindensity = mindensity;
         this.maxdensity = maxdensity;
     }
